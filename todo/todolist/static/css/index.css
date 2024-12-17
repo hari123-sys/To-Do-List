@@ -1,0 +1,63 @@
+.home{
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+.article{
+    background-color: bisque;
+    height: 50%;
+    width: 70%;
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow:2px 2px 3px #888888;
+}
+
+.container{
+    padding:2% 5% 20px 25%;
+}
+.text{
+    text-decoration: none;
+    color: black;
+    display: -webkit-box;       /* Creates a flexible box layout */
+    -webkit-box-orient: vertical; /* Specifies the box orientation */
+    -webkit-line-clamp: 3;     /* Limits the text to 5 lines */
+    overflow: hidden;         
+    text-overflow: ellipsis;
+}
+
+a:hover{
+    color: #007aff;
+}
+
+.article:hover{
+    box-shadow: 2px 7px 5px #888888;
+}
+
+.box{
+    padding-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.time{
+    height: 100%;
+    font-size: 14px;
+}
+.btnn{
+    color: black;
+    text-decoration: none;
+    height: 100%;
+    width: 15%;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1%;
+    position: relative;
+    right: 5%;
+}

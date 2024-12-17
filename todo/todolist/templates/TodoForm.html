@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+{% block content %}
+    <div class="form">
+        <div class="card">
+            <div class="inner-card">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="lable">
+                        <label for="title">Title</label>
+                        <input type="text" class="input" name="title" id="title" placeholder="title of the activity" value="{{ todotitle }}">
+                    </div>
+        
+                    <div class="lable2">
+                        <label for="desc" class="desc" >To DO List</label><br>
+                        <textarea name="desc" id="desc" class="input textarea">{{desc}}</textarea>
+                    </div>
+            
+                    <div class="submit-btn"><div class="button lable3"><button type="submit" class="btn">submit</button></div></div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

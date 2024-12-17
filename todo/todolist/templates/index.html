@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="home">
+    <div class="title">
+        <h2>{{title}}</h2>
+    </div>
+    <div class="container">
+        {% for title, todo in todo_lists %}
+        <div class="article">
+            <h3 class="text"><a href="{% url 'viewData' title %}" class="text">{{todo.title}}</a></h3>
+            <!-- <p class="text" style="padding-top: 1%;">{{todo.status}}</p> -->
+           
+            <div class="box">
+                <p class="time">{{todo.time}}</p>
+                {% if todo.status == 'Not Completed' %}
+                    <a href="{% url 'done' todo.id %}" class="btnn">Done</a>
+                {% else %}
+                    <a href="{% url 'delete' todo.id %}" class="btnn">remove</a>
+                {% endif %}
+            </div>
+        </div>
+        <br>
+        <br>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

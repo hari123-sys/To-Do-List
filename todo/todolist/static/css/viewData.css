@@ -1,0 +1,47 @@
+.article-title{
+    text-align: center;
+}
+
+.card1{
+    width: 60%;
+    max-height: 100%;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 1%;
+}
+.block{
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.article-title,.article-text{
+    padding: 1%;
+}
+
+.article-text{
+    font-size: 17px;
+}
+.edit-todo{
+    /* border: 1px solid; */
+    width: 10%;
+    height: 17%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    left: 80%;
+}
+
+.edit{
+    text-decoration: none;
+    color: black;
+}
+.date{
+    font-size: 14px;
+}
